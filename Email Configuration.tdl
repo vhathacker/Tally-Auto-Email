@@ -1,0 +1,19 @@
+
+
+
+	
+[#Part: Company F11 Other Features]
+	
+	Local	: Part	: Cfg PartContent		: Add	: Lines	:	At End :Prime_ACBMailConfig
+	
+
+	[Line :Prime_ACBMailConfig]
+			Fields 	 : Medium Prompt, Prime_ACBMailConfig
+			Local  	 : Field : Medium Prompt : Info : $$LocaleString:"Enable Auto E-Mail?"
+			Local  	 : Field : Medium Prompt : Color: Blue
+			Space Top: 2 mms 
+			
+			[Field : Prime_ACBMailConfig]
+				Use		: Logical Field 
+				Storage : AutoMoption
+				Sub Form: Prime_ACBMailConfig
